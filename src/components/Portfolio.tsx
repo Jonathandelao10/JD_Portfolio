@@ -54,15 +54,49 @@ const Portfolio = () => {
     <div className="min-h-screen relative overflow-hidden">
       <AnimatedBackground />
       
-      {/* Mobile Menu Button */}
-      <Button
-        variant="outline"
-        size="icon"
-        className="fixed top-4 left-4 z-50 lg:hidden glass-card"
-        onClick={() => setSidebarOpen(!sidebarOpen)}
+      {/* Top Navigation Bar */}
+      <motion.header
+        initial={{ y: -100 }}
+        animate={{ y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-background/80 border-b border-border/30"
       >
-        {sidebarOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-      </Button>
+        <div className="container mx-auto px-6 h-16 flex items-center justify-between">
+          <div className="flex items-center space-x-3">
+            <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
+              <span className="text-white font-bold text-sm">JD</span>
+            </div>
+            <span className="font-bold text-lg gradient-text">Jonathan De la O</span>
+          </div>
+          
+          <nav className="hidden md:flex items-center space-x-1">
+            {navigationItems.map((item) => (
+              <button
+                key={item.id}
+                onClick={() => scrollToSection(item.id)}
+                className={`flex items-center space-x-2 px-4 py-2 rounded-lg transition-all duration-300 ${
+                  activeSection === item.id
+                    ? 'bg-primary/20 text-primary'
+                    : 'hover:bg-muted/50 text-muted-foreground hover:text-foreground'
+                }`}
+              >
+                <item.icon className="h-4 w-4" />
+                <span className="font-medium">{item.label}</span>
+              </button>
+            ))}
+          </nav>
+
+          {/* Mobile Menu Button */}
+          <Button
+            variant="outline"
+            size="icon"
+            className="md:hidden glass-card"
+            onClick={() => setSidebarOpen(!sidebarOpen)}
+          >
+            {sidebarOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          </Button>
+        </div>
+      </motion.header>
 
       {/* Sidebar Navigation */}
       <AnimatePresence>
@@ -72,7 +106,7 @@ const Portfolio = () => {
             animate={{ x: 0 }}
             exit={{ x: -300 }}
             transition={{ type: "spring", damping: 20 }}
-            className="fixed left-0 top-0 h-full w-80 sidebar-glass z-40 p-6"
+            className="fixed left-0 top-16 h-[calc(100vh-4rem)] w-80 sidebar-glass z-40 p-6"
           >
             <div className="flex flex-col h-full">
               <div className="mb-8">
@@ -111,45 +145,9 @@ const Portfolio = () => {
         )}
       </AnimatePresence>
 
-      {/* Desktop Sidebar */}
-      <nav className="hidden lg:block fixed left-0 top-0 h-full w-80 sidebar-glass z-40 p-6">
-        <div className="flex flex-col h-full">
-          <div className="mb-8">
-            <h2 className="text-2xl font-bold gradient-text mb-2">
-              Jonathan De la O
-            </h2>
-            <p className="text-muted-foreground text-sm">
-              AI Developer & Computer Scientist
-            </p>
-          </div>
-
-          <div className="flex-1 space-y-2">
-            {navigationItems.map((item) => (
-              <button
-                key={item.id}
-                onClick={() => scrollToSection(item.id)}
-                className={`w-full flex items-center space-x-3 p-3 rounded-xl transition-all duration-300 ${
-                  activeSection === item.id
-                    ? 'bg-primary/20 text-primary border border-primary/30'
-                    : 'hover:bg-muted/50 text-muted-foreground hover:text-foreground'
-                }`}
-              >
-                <item.icon className="h-5 w-5" />
-                <span className="font-medium">{item.label}</span>
-              </button>
-            ))}
-          </div>
-
-          <div className="pt-6 border-t border-border/30">
-            <p className="text-xs text-muted-foreground text-center">
-              © 2024 Jonathan De la O
-            </p>
-          </div>
-        </div>
-      </nav>
 
       {/* Main Content */}
-      <main className="min-h-screen transition-all duration-300 lg:ml-80">
+      <main className="min-h-screen pt-16">
         <motion.div
           key={activeSection}
           initial={{ opacity: 0, y: 20 }}
@@ -168,7 +166,7 @@ const Portfolio = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="fixed inset-0 bg-background/80 backdrop-blur-sm z-30 lg:hidden"
+          className="fixed inset-0 bg-background/80 backdrop-blur-sm z-30 md:hidden"
           onClick={() => setSidebarOpen(false)}
         />
       )}
