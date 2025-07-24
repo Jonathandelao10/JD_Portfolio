@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { Download, Code, Brain, Database, Users } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
+import { useState, useEffect } from 'react';
 
 const roles = [
   { icon: Brain, title: 'AI Developer', color: 'text-primary' },
@@ -10,7 +11,48 @@ const roles = [
   { icon: Users, title: 'Project Manager', color: 'text-primary-glow' },
 ];
 
+const dynamicRoles = [
+  'AI Developer',
+  'Machine Learning Engineer', 
+  'Software Developer',
+  'Data Scientist',
+  'Project Manager',
+  'Computer Scientist'
+];
+
 const AboutSection = () => {
+  const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
+  const [displayText, setDisplayText] = useState('');
+  const [isTyping, setIsTyping] = useState(true);
+
+  useEffect(() => {
+    const currentRole = dynamicRoles[currentRoleIndex];
+    
+    if (isTyping) {
+      if (displayText.length < currentRole.length) {
+        const timeout = setTimeout(() => {
+          setDisplayText(currentRole.slice(0, displayText.length + 1));
+        }, 100);
+        return () => clearTimeout(timeout);
+      } else {
+        const timeout = setTimeout(() => {
+          setIsTyping(false);
+        }, 2000);
+        return () => clearTimeout(timeout);
+      }
+    } else {
+      if (displayText.length > 0) {
+        const timeout = setTimeout(() => {
+          setDisplayText(displayText.slice(0, -1));
+        }, 50);
+        return () => clearTimeout(timeout);
+      } else {
+        setIsTyping(true);
+        setCurrentRoleIndex((prev) => (prev + 1) % dynamicRoles.length);
+      }
+    }
+  }, [displayText, isTyping, currentRoleIndex]);
+
   return (
     <section id="about" className="min-h-screen py-20 px-4">
       <div className="container mx-auto max-w-6xl">
@@ -74,8 +116,9 @@ const AboutSection = () => {
             className="space-y-6"
           >
             <Card className="glass-card p-8">
-              <h3 className="text-2xl font-bold mb-6 gradient-text-secondary">
-                AI Developer / Machine Learning Engineer / Software Developer / Data Scientist / Project Manager / Computer Scientist
+              <h3 className="text-2xl font-bold mb-6 gradient-text-secondary min-h-[2.5rem] flex items-center">
+                {displayText}
+                <span className="ml-1 w-0.5 h-6 bg-primary animate-pulse" />
               </h3>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
