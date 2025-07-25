@@ -124,8 +124,8 @@ const AboutSection = () => {
                 <p>
                   I'm a Computer Science professional with a strong interest in Machine Learning, AI, and Data Science. 
                   With experience in AI development, data analysis, and project management, I've contributed to real-world 
-                  projects at <span className="text-primary font-semibold">NASA</span>, <span className="text-secondary font-semibold">CAI3p0</span>, 
-                  <span className="text-accent font-semibold"> Beam Group</span>, and <span className="text-primary-glow font-semibold">ASU</span>.
+                  projects at <span className="text-primary font-semibold">NASA</span>, <span className="text-primary font-semibold">CAI3p0</span>, 
+                  <span className="text-primary font-semibold"> Beam Group</span>, and <span className="text-primary-glow font-semibold">ASU</span>.
                 </p>
                 <p>
                   I enjoy building intelligent systems that solve meaningful problems and improve user experience. 
