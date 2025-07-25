@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Home, User, Code, GraduationCap, Briefcase, FolderOpen, Award, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -28,7 +28,6 @@ const Portfolio = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const scrollToSection = (sectionId: string) => {
-    setActiveSection(sectionId);
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
@@ -36,19 +35,24 @@ const Portfolio = () => {
     setSidebarOpen(false);
   };
 
-  const renderSection = () => {
-    switch (activeSection) {
-      case 'home': return <HeroSection />;
-      case 'about': return <AboutSection />;
-      case 'skills': return <SkillsSection />;
-      case 'education': return <EducationSection />;
-      case 'experience': return <ExperienceSection />;
-      case 'projects': return <ProjectsSection />;
-      case 'awards': return <AwardsSection />;
-      case 'contact': return <ContactSection />;
-      default: return <HeroSection />;
-    }
-  };
+  // Scroll spy functionality to update active section
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = navigationItems.map(item => document.getElementById(item.id)).filter(Boolean);
+      const scrollPosition = window.scrollY + 100;
+
+      for (let i = sections.length - 1; i >= 0; i--) {
+        const section = sections[i];
+        if (section && section.offsetTop <= scrollPosition) {
+          setActiveSection(navigationItems[i].id);
+          break;
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <div className="min-h-screen relative overflow-hidden">
@@ -146,17 +150,31 @@ const Portfolio = () => {
 
 
       {/* Main Content */}
-      <main className="min-h-screen pt-16">
-        <motion.div
-          key={activeSection}
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -20 }}
-          transition={{ duration: 0.5 }}
-          className="relative z-10"
-        >
-          {renderSection()}
-        </motion.div>
+      <main className="relative z-10 pt-16">
+        <section id="home" className="min-h-screen">
+          <HeroSection />
+        </section>
+        <section id="about" className="min-h-screen">
+          <AboutSection />
+        </section>
+        <section id="skills" className="min-h-screen">
+          <SkillsSection />
+        </section>
+        <section id="education" className="min-h-screen">
+          <EducationSection />
+        </section>
+        <section id="experience" className="min-h-screen">
+          <ExperienceSection />
+        </section>
+        <section id="projects" className="min-h-screen">
+          <ProjectsSection />
+        </section>
+        <section id="awards" className="min-h-screen">
+          <AwardsSection />
+        </section>
+        <section id="contact" className="min-h-screen">
+          <ContactSection />
+        </section>
       </main>
 
       {/* Mobile Overlay */}
