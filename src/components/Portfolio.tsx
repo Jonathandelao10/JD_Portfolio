@@ -66,7 +66,6 @@ const Portfolio = () => {
             <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-sm">JD</span>
             </div>
-            <span className="font-bold text-lg gradient-text">Jonathan De la O</span>
           </div>
           
           <nav className="hidden md:flex items-center space-x-1">
