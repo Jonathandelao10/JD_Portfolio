@@ -115,17 +115,6 @@ const EducationSection = () => {
           ))}
         </div>
 
-        {/* Timeline Connector */}
-        <div className="relative mt-12">
-          <div className="absolute left-1/2 transform -translate-x-1/2 w-px h-16 bg-gradient-to-b from-primary to-secondary" />
-          <motion.div
-            initial={{ scale: 0 }}
-            whileInView={{ scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.8 }}
-            viewport={{ once: true }}
-            className="absolute left-1/2 bottom-0 transform -translate-x-1/2 w-4 h-4 bg-gradient-to-r from-primary to-secondary rounded-full"
-          />
-        </div>
       </div>
     </section>
   );
