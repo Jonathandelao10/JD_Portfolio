@@ -116,6 +116,7 @@ const AboutSection = () => {
             className="space-y-6"
           >
             <Card className="glass-card p-8">
+              <h2 className="text-3xl font-bold mb-4 text-foreground">Hi, I am Jonathan</h2>
               <h3 className="text-2xl font-bold mb-6 gradient-text-secondary min-h-[2.5rem] flex items-center">
                 {displayText}
                 <span className="ml-1 w-0.5 h-6 bg-primary animate-pulse" />
