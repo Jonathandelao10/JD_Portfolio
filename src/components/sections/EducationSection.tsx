@@ -52,13 +52,6 @@ const EducationSection = () => {
             >
               <Card className="glass-card p-8 relative overflow-hidden">
                 {/* Status Indicator */}
-                <div className={`absolute top-0 right-0 px-4 py-2 rounded-bl-xl text-xs font-bold ${
-                  edu.status === 'current' 
-                    ? 'bg-primary/20 text-primary border-l border-b border-primary/30' 
-                    : 'bg-secondary/20 text-secondary border-l border-b border-secondary/30'
-                }`}>
-                  {edu.status === 'current' ? 'In Progress' : 'Completed'}
-                </div>
 
                 <div className="grid lg:grid-cols-3 gap-6">
                   {/* Institution Info */}
