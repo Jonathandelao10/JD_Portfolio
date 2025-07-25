@@ -33,7 +33,7 @@ const projects = [
   {
     title: 'E-Commerce Platform',
     description: 'Full-stack e-commerce solution with real-time inventory management and payment processing.',
-    technologies: ['React', 'Node.js', 'PostgreSQL', 'Stripe API'],
+    technologies: ['React', 'Node.js', 'PostgreSQL', 'SQL', 'Stripe API'],
     category: 'Full-Stack',
     featured: false,
     status: 'completed'
