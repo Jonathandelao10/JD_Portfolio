@@ -85,13 +85,6 @@ const ExperienceSection = () => {
             >
               <Card className="glass-card p-6 relative overflow-hidden group">
                 {/* Status Indicator */}
-                <div className={`absolute top-0 right-0 px-3 py-1 rounded-bl-xl text-xs font-bold ${
-                  exp.status === 'current' 
-                    ? 'bg-primary/20 text-primary border-l border-b border-primary/30' 
-                    : 'bg-secondary/20 text-secondary border-l border-b border-secondary/30'
-                }`}>
-                  {exp.status === 'current' ? 'Current' : 'Completed'}
-                </div>
 
                 <div className="grid lg:grid-cols-4 gap-6">
                   {/* Company Info */}
