@@ -160,14 +160,10 @@ const ProjectsSection = () => {
                       ))}
                     </div>
 
-                    <div className="flex space-x-3 pt-4">
-                      <Button size="sm" variant="outline" className="flex-1">
+                    <div className="flex justify-center pt-4">
+                      <Button size="sm" variant="outline" className="w-full">
                         <Github className="h-4 w-4 mr-2" />
                         Code
-                      </Button>
-                      <Button size="sm" className="flex-1 glow-btn">
-                        <ExternalLink className="h-4 w-4 mr-2" />
-                        Demo
                       </Button>
                     </div>
                   </div>
@@ -235,12 +231,9 @@ const ProjectsSection = () => {
                       )}
                     </div>
 
-                    <div className="flex space-x-2 pt-2">
+                    <div className="flex justify-center pt-2">
                       <Button size="sm" variant="ghost">
                         <Github className="h-3 w-3" />
-                      </Button>
-                      <Button size="sm" variant="ghost">
-                        <ExternalLink className="h-3 w-3" />
                       </Button>
                     </div>
                   </div>

@@ -52,8 +52,10 @@ const HeroSection = () => {
             <Button className="glow-btn px-8 py-6 text-lg">
               View My Work
             </Button>
-            <Button variant="outline" className="glass-card px-8 py-6 text-lg">
-              Download Resume
+            <Button variant="outline" className="glass-card px-8 py-6 text-lg" asChild>
+              <a href="https://drive.google.com/file/d/1vLR3xcdZnaja7cEIkawdv_lRNlsAs53Y/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                Download Resume
+              </a>
             </Button>
           </motion.div>
 
@@ -64,14 +66,20 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 1 }}
             className="flex justify-center space-x-6 mb-16"
           >
-            <Button variant="ghost" size="icon" className="hover:text-primary transition-colors">
-              <Github className="h-6 w-6" />
+            <Button variant="ghost" size="icon" className="hover:text-primary transition-colors" asChild>
+              <a href="https://github.com/Jonathandelao10" target="_blank" rel="noopener noreferrer">
+                <Github className="h-6 w-6" />
+              </a>
             </Button>
-            <Button variant="ghost" size="icon" className="hover:text-primary transition-colors">
-              <Linkedin className="h-6 w-6" />
+            <Button variant="ghost" size="icon" className="hover:text-primary transition-colors" asChild>
+              <a href="https://www.linkedin.com/in/jonathandelao10/" target="_blank" rel="noopener noreferrer">
+                <Linkedin className="h-6 w-6" />
+              </a>
             </Button>
-            <Button variant="ghost" size="icon" className="hover:text-primary transition-colors">
-              <Mail className="h-6 w-6" />
+            <Button variant="ghost" size="icon" className="hover:text-primary transition-colors" asChild>
+              <a href="mailto:jonathan.delao@example.com">
+                <Mail className="h-6 w-6" />
+              </a>
             </Button>
           </motion.div>
 

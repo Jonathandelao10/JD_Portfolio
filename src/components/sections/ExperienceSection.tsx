@@ -119,16 +119,6 @@ const ExperienceSection = () => {
                       {exp.description}
                     </p>
                     
-                    {/* Action Button */}
-                    <motion.button
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                      className="inline-flex items-center space-x-2 text-primary hover:text-primary-glow 
-                                transition-colors duration-300 font-medium"
-                    >
-                      <span>Learn More</span>
-                      <ExternalLink className="h-4 w-4" />
-                    </motion.button>
                   </div>
 
                   {/* Technologies */}
