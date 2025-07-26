@@ -14,7 +14,7 @@ const education = [
   },
   {
     institution: 'Southwestern College',
-    degree: 'General Studies',
+    degree: 'Bachelor of Science in Computer Science',
     period: '2021–2022',
     location: 'Winfield, KS',
     description: 'Foundation in mathematics, sciences, and computer fundamentals. Maintained high academic standing while competing as a student-athlete.',

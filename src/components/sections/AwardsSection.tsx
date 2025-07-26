@@ -5,29 +5,11 @@ import { Badge } from '@/components/ui/badge';
 
 const awards = [
   {
-    icon: Trophy,
-    title: 'NASA NPWEE Academy Certificate',
-    organization: 'NASA',
-    year: '2024',
-    description: 'Completed intensive aerospace engineering program',
-    category: 'Professional',
-    color: 'text-primary'
-  },
-  {
-    icon: Star,
-    title: 'AI Innovation Award',
-    organization: 'CAI3P0',
-    year: '2024',
-    description: 'Outstanding contribution to AI development',
-    category: 'Technical',
-    color: 'text-secondary'
-  },
-  {
     icon: Medal,
     title: 'Academic Excellence',
     organization: 'Arizona State University',
-    year: '2023-2024',
-    description: 'Dean\'s List recognition for academic achievement',
+    year: '2021 - 2025',
+    description: 'Consistent academic achievement and recognition',
     category: 'Academic',
     color: 'text-accent'
   },
@@ -42,20 +24,38 @@ const awards = [
   },
   {
     icon: Trophy,
-    title: 'Tennis Championship',
-    organization: 'Regional Tournament',
-    year: '2022',
-    description: 'First place in collegiate tennis competition',
-    category: 'Athletic',
+    title: 'IBM Data Science Certification',
+    organization: 'IBM',
+    year: '2024',
+    description: 'Professional certification in data science and analytics',
+    category: 'Professional',
     color: 'text-primary'
   },
   {
     icon: Star,
-    title: 'Leadership Excellence',
-    organization: 'Stanford Summer Program',
-    year: '2022',
-    description: 'Exceptional leadership in youth mentoring',
-    category: 'Leadership',
+    title: 'NASA NPWEE Academy Certificate',
+    organization: 'NASA',
+    year: '2024',
+    description: 'Completed Technical Proposal with outstanding performance',
+    category: 'Professional',
+    color: 'text-secondary'
+  },
+  {
+    icon: Trophy,
+    title: 'IBM Python for AI & Development Certificate',
+    organization: 'IBM',
+    year: '2024',
+    description: 'Certification in Python programming for AI applications',
+    category: 'Technical',
+    color: 'text-primary'
+  },
+  {
+    icon: Star,
+    title: 'IBM Databases and SQL for Data Science with Python Certificate',
+    organization: 'IBM',
+    year: '2024',
+    description: 'Advanced certification in database management and SQL',
+    category: 'Technical',
     color: 'text-secondary'
   }
 ];

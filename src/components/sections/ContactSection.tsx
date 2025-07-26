@@ -293,8 +293,8 @@ const ContactSection = () => {
               Whether you have a groundbreaking idea or need technical expertise, 
               I'm here to help bring your vision to life.
             </p>
-            <Button className="glow-btn">
-              Let's Collaborate
+            <Button className="glow-btn" asChild>
+              <a href="#contact">Let's Collaborate</a>
             </Button>
           </Card>
         </motion.div>

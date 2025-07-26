@@ -10,7 +10,7 @@ const experiences = [
     period: 'Aug 2024 – May 2025',
     location: 'Remote',
     type: 'Full-time',
-    description: 'Developing scalable software solutions and contributing to innovative projects that improve user experience and system efficiency.',
+    description: 'Designed and developed an AI-powered chatbot to help seniors navigate and complete complex Canadian financial aid forms, including dynamic PDF filling and personalized guidance. Engineered backend APIs using Firebase and JavaScript to support real-time form processing and logic-based response generation. Led chatbot prompt design and NLP integration to ensure human-like conversation and adaptive question flows. Collaborated with a cross-functional team to deliver a production-ready MVP, improving accessibility for non-technical users. Conducted rigorous testing, user interviews, and documentation to support future deployment and scalability.',
     technologies: ['Python', 'React', 'FastAPI', 'PostgreSQL'],
     status: 'current'
   },
@@ -20,7 +20,7 @@ const experiences = [
     period: 'Sep 2022 – May 2025',
     location: 'Tempe, AZ',
     type: 'Part-time',
-    description: 'Managing and optimizing university assets, implementing data-driven solutions to improve operational efficiency and resource allocation.',
+    description: 'Coordinating the tagging of all movable equipment with a value of $5,000 or more. Coordinating a biennial inventory of all capital equipment per PCS 600. Maintaining capital asset records in Workday and tracking capital assets from inception to retirement. Completing annual and ad hoc asset reports. Responding to auditor and sponsor requests. Other administrative duties or special projects as assigned.',
     technologies: ['Data Analysis', 'Project Management', 'Asset Management'],
     status: 'current'
   },
@@ -30,7 +30,7 @@ const experiences = [
     period: 'Jun 2024 – Jan 2025',
     location: 'Remote',
     type: 'Internship',
-    description: 'Developing AI solutions and machine learning models for real-world applications, focusing on natural language processing and predictive analytics.',
+    description: 'Contributed to strategic planning and implementation of AI solutions, integrating technical insights with real-world applications. Completed specialized AI training, enhancing skills in machine learning, natural language processing (NLP), and model evaluation. Collaborated on AI-driven solutions and engaged with stakeholders to align chatbot development with business needs. Conducted strategic AI research and case studies, analyzing chatbot effectiveness and optimizing performance. Developed an AI Chatbot, gaining expertise in Transformer models and Mixture of Experts.',
     technologies: ['TensorFlow', 'Python', 'NLTK', 'Machine Learning'],
     status: 'current'
   },
@@ -40,7 +40,7 @@ const experiences = [
     period: 'May 2024 – Aug 2024',
     location: 'Remote',
     type: 'Internship',
-    description: 'Led cross-functional teams in aerospace engineering projects, coordinated research initiatives, and managed project timelines for mission-critical applications.',
+    description: 'Collaborated with an interdisciplinary team to develop an AI-Driven Real-Time Analysis for CubeSat Mission Reliability technical proposal. Developed skills in technical proposal writing, peer review, and research project planning. Managed programmatic aspects for the team, overseeing budgeting, scheduling, and outreach efforts. Introduced efficient project management and scheduling methods, cutting project completion time by 20%.',
     technologies: ['Project Management', 'Leadership', 'Research'],
     status: 'completed'
   },
@@ -50,7 +50,7 @@ const experiences = [
     period: 'Jun 2022 – Aug 2022',
     location: 'Stanford, CA',
     type: 'Seasonal',
-    description: 'Mentored young athletes, developed training programs, and fostered leadership skills through sports education and character development.',
+    description: 'Mentored young athletes, developed training programs, and fostered leadership skills through sports education and character development. Developed leadership skills to organize tennis learning groups of +100 kids and adults. Accomplished communication skills by applying different teaching methods for a wide range of ages.',
     technologies: ['Leadership', 'Mentoring', 'Program Development'],
     status: 'completed'
   }

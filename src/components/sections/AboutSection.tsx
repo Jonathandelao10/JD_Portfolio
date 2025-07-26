@@ -100,9 +100,11 @@ const AboutSection = () => {
               transition={{ duration: 0.8, delay: 0.6 }}
               viewport={{ once: true }}
             >
-              <Button className="glow-btn w-full">
-                <Download className="h-5 w-5 mr-2" />
-                Download Resume
+              <Button className="glow-btn w-full" asChild>
+                <a href="https://drive.google.com/file/d/1vLR3xcdZnaja7cEIkawdv_lRNlsAs53Y/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                  <Download className="h-5 w-5 mr-2" />
+                  Download Resume
+                </a>
               </Button>
             </motion.div>
           </motion.div>

@@ -23,7 +23,10 @@ export const submitContactForm = async (data: ContactFormData): Promise<{ succes
     headers: {
       'Content-Type': 'application/json',
     },
-    body: JSON.stringify(data),
+    body: JSON.stringify({
+      ...data,
+      to: 'jddelao@asu.edu'
+    }),
   });
   
   if (!response.ok) {

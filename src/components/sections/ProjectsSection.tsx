@@ -8,55 +8,143 @@ import { Badge } from '@/components/ui/badge';
 const projects = [
   {
     title: 'SpaceX Launch Predictor',
-    description: 'Machine learning model that predicts SpaceX launch success rates using historical data and weather patterns.',
-    technologies: ['Python', 'TensorFlow', 'Pandas', 'Scikit-learn'],
+    description: 'Machine learning model to predict SpaceX Falcon 9 first stage landing success. Collected data via APIs and web scraping, performed data wrangling and EDA, and created interactive visual analytics. Built and evaluated classification models to analyze the impact of variables like payload mass and launch site on landing success.',
+    technologies: ['Python', 'SQL', 'Pandas', 'Numpy', 'Matplotlib', 'Seaborn', 'Scikit-learn', 'Jupyter Notebook', 'BeautifulSoup'],
+    category: 'AI/ML',
+    featured: true,
+    status: 'completed'
+  },
+  {
+    title: 'Political News Bias Predictor',
+    description: 'NLP model that analyzes news articles to detect political bias and sentiment using deep learning. US Political News Bias Predictor, leveraging NLP and machine learning to detect bias across news sources while minimizing overfitting to specific outlets.',
+    technologies: ['Python', 'TensorFlow', 'Numpy', 'NLTK', 'Scikit-learn', 'Pandas', 'BERT'],
     category: 'AI/ML',
     featured: true,
     status: 'completed'
   },
   {
     title: 'AI-Powered Assistant',
-    description: 'Intelligent chatbot with natural language processing capabilities for customer service automation.',
-    technologies: ['Python', 'NLTK', 'FastAPI', 'React'],
-    category: 'AI/ML',
-    featured: true,
-    status: 'in-progress'
-  },
-  {
-    title: 'Political News Bias Predictor',
-    description: 'NLP model that analyzes news articles to detect political bias and sentiment using deep learning.',
-    technologies: ['Python', 'TensorFlow', 'NLTK', 'Web Scraping'],
+    description: 'Intelligent chatbot with natural language processing capabilities for customer service automation. A custom AI assistant built using LLaMA 3.2, optimized through quantization and instruction tuning for accurate, efficient responses.',
+    technologies: ['Python', 'NLTK', 'Llama 3.2', 'HuggingFace', 'Transformers'],
     category: 'AI/ML',
     featured: true,
     status: 'completed'
   },
   {
-    title: 'E-Commerce Platform',
-    description: 'Full-stack e-commerce solution with real-time inventory management and payment processing.',
-    technologies: ['React', 'Node.js', 'PostgreSQL', 'SQL', 'Stripe API'],
+    title: 'AI chatbot for Financial Services',
+    description: 'An AI chatbot, designed to guide seniors through complex financial aid applications, improving accessibility through natural conversation.',
+    technologies: ['Gemini', 'JavaScript', 'React', 'Node.js', 'Firebase', 'CSS'],
+    category: 'AI/ML',
+    featured: true,
+    status: 'completed'
+  },
+  {
+    title: 'Wine Quality prediction with ML models',
+    description: 'Machine learning model that predicts the quality of wine using different machine learning algorithms such as K-means clustering and decision tree classification.',
+    technologies: ['Python', 'Scikit-learn', 'Numpy', 'Jupyter Notebook'],
+    category: 'AI/ML',
+    featured: false,
+    status: 'completed'
+  },
+  {
+    title: 'Real Estate Market Predictor',
+    description: 'Machine learning model that predicts real estate prices.',
+    technologies: ['Python', 'Scikit-learn', 'Numpy', 'Matplotlib', 'Seaborn', 'Jupyter Notebook'],
+    category: 'AI/ML',
+    featured: false,
+    status: 'completed'
+  },
+  {
+    title: 'F1 Predictor 2025',
+    description: 'Machine learning model that predicts the F1 winner.',
+    technologies: ['Python', 'Jupyter Notebook', 'Pandas'],
+    category: 'AI/ML',
+    featured: false,
+    status: 'completed'
+  },
+  {
+    title: 'Facebook Sentiment Analysis',
+    description: 'Sentiment analysis tool for Facebook posts and comments using natural language processing.',
+    technologies: ['Python', 'NLTK', 'Numpy', 'Pandas', 'Matplotlib'],
+    category: 'AI/ML',
+    featured: false,
+    status: 'completed'
+  },
+  {
+    title: 'Sales Forecast Predictor',
+    description: 'Machine Learning model that predicts Sales Forecast using XGBoost.',
+    technologies: ['Python', 'Pandas', 'Matplotlib', 'Scikit-learn', 'XGBoost', 'Seaborn'],
+    category: 'AI/ML',
+    featured: false,
+    status: 'completed'
+  },
+  {
+    title: 'Stock Price predictor using Tensorflow',
+    description: 'Stock price prediction model using Tensorflow and LSTM (Long Short-Term Memory) networks a type of RNN.',
+    technologies: ['Python', 'Numpy', 'Pandas', 'TensorFlow', 'Seaborn', 'Matplotlib', 'Jupyter Notebook'],
+    category: 'AI/ML',
+    featured: false,
+    status: 'completed'
+  },
+  {
+    title: 'Credit Card Fraud Detector',
+    description: 'Machine learning model that detects fraudulent credit card transactions using historical data. This by analyzing transaction patterns, enabling the model to distinguish between normal and fraudulent activity.',
+    technologies: ['Python', 'Matplotlib', 'Numpy', 'Pandas', 'Seaborn', 'Jupyter Notebook'],
+    category: 'AI/ML',
+    featured: false,
+    status: 'completed'
+  },
+  {
+    title: 'Effortlogger tool',
+    description: 'Used agile methodologies to lead a team of 4 individuals for enhancing the EffortLogger tool for a manufacturing firm. Implemented features to adapt to business needs, enhance security, and support large-scale projects. Successfully modernized the tool, meeting customer specifications and improving functionality.',
+    technologies: ['Java', 'JUnit', 'Eclipse', 'Jira', 'Astah'],
+    category: 'Software Engineering',
+    featured: false,
+    status: 'completed'
+  },
+  {
+    title: 'Vehicle Software',
+    description: 'Program to simulate the operation of vehicles to compare the performance of traditional, electric and hybrid automobiles. Gives you the best option comparing the performance of each of the vehicles.',
+    technologies: ['C++'],
+    category: 'Software Engineering',
+    featured: false,
+    status: 'completed'
+  },
+  {
+    title: 'Phone Directory',
+    description: 'Phone directory that allows the user to create, show, insert, remove, store and find contacts in it. All this functions through the use of data structures.',
+    technologies: ['C++'],
+    category: 'Software Engineering',
+    featured: false,
+    status: 'completed'
+  },
+  {
+    title: 'Rapid Recovery',
+    description: 'Web application to assist in the recovery of Stroke Patients. The game helps in the development of the Fine Motor Skills(FMS) deactivated in the patients suffering from Stroke.',
+    technologies: ['JavaScript', 'p5.js', 'Git'],
+    category: 'Web Development',
+    featured: false,
+    status: 'completed'
+  },
+  {
+    title: 'Mario Bros Website',
+    description: 'Website based on the classic game "Mario Bros" using HTML, CSS and Javascript, which is compatible with Laptops, desktops and other devices.',
+    technologies: ['HTML', 'JavaScript', 'CSS'],
+    category: 'Web Development',
+    featured: false,
+    status: 'completed'
+  },
+  {
+    title: 'eCommerce Platform',
+    description: 'Designed and developed a full-stack e-commerce platform to showcase advanced database management skills. The backend was powered by PostgreSQL, focusing on efficient schema design, relational integrity, and query optimization. The frontend, built with React, HTML, CSS, and JavaScript. The project demonstrated proficiency in building scalable CRUD operations, managing user sessions, and integrating frontend components with a robust SQL backend.',
+    technologies: ['PostgreSQL', 'JavaScript', 'CSS', 'HTML', 'React'],
     category: 'Full-Stack',
     featured: false,
     status: 'completed'
-  },
-  {
-    title: 'Data Visualization Dashboard',
-    description: 'Interactive dashboard for real-time data analysis and visualization using modern web technologies.',
-    technologies: ['React', 'D3.js', 'Python', 'FastAPI'],
-    category: 'Data Science',
-    featured: false,
-    status: 'completed'
-  },
-  {
-    title: 'Blockchain Voting System',
-    description: 'Secure voting platform using blockchain technology to ensure transparency and prevent fraud.',
-    technologies: ['Solidity', 'Web3.js', 'React', 'Ethereum'],
-    category: 'Blockchain',
-    featured: false,
-    status: 'in-progress'
   }
 ];
 
-const categories = ['All', 'AI/ML', 'Full-Stack', 'Data Science', 'Blockchain'];
+const categories = ['All', 'AI/ML', 'Full-Stack', 'Software Engineering', 'Web Development'];
 
 const ProjectsSection = () => {
   const [filter, setFilter] = useState('All');

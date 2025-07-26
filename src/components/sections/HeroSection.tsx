@@ -49,8 +49,8 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.8 }}
             className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16"
           >
-            <Button className="glow-btn px-8 py-6 text-lg">
-              View My Work
+            <Button className="glow-btn px-8 py-6 text-lg" asChild>
+              <a href="#projects">View My Work</a>
             </Button>
             <Button variant="outline" className="glass-card px-8 py-6 text-lg" asChild>
               <a href="https://drive.google.com/file/d/1vLR3xcdZnaja7cEIkawdv_lRNlsAs53Y/view?usp=sharing" target="_blank" rel="noopener noreferrer">
