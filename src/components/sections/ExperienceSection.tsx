@@ -9,9 +9,9 @@ const experiences = [
     role: 'Software Developer',
     period: 'Aug 2024 – May 2025',
     location: 'Remote',
-    type: 'Full-time',
-    description: 'Designed and developed an AI-powered chatbot to help seniors navigate and complete complex Canadian financial aid forms, including dynamic PDF filling and personalized guidance. Engineered backend APIs using Firebase and JavaScript to support real-time form processing and logic-based response generation. Led chatbot prompt design and NLP integration to ensure human-like conversation and adaptive question flows. Collaborated with a cross-functional team to deliver a production-ready MVP, improving accessibility for non-technical users. Conducted rigorous testing, user interviews, and documentation to support future deployment and scalability.',
-    technologies: ['Python', 'React', 'FastAPI', 'PostgreSQL'],
+    type: 'Part-time',
+    description: '• Designed and developed an AI-powered chatbot to help seniors navigate and complete complex Canadian financial aid forms, including dynamic PDF filling and personalized guidance.\n• Engineered backend APIs using Firebase and JavaScript to support real-time form processing and logic-based response generation.\n• Led chatbot prompt design and NLP integration to ensure human-like conversation and adaptive question flows.\n• Collaborated with a cross-functional team to deliver a production-ready MVP, improving accessibility for non-technical users.\n• Conducted rigorous testing, user interviews, and documentation to support future deployment and scalability.',
+    technologies: ['Python', 'Javascript', 'React', 'Firebase', 'Node.js', 'Gemini'],
     status: 'current'
   },
   {
@@ -20,8 +20,8 @@ const experiences = [
     period: 'Sep 2022 – May 2025',
     location: 'Tempe, AZ',
     type: 'Part-time',
-    description: 'Coordinating the tagging of all movable equipment with a value of $5,000 or more. Coordinating a biennial inventory of all capital equipment per PCS 600. Maintaining capital asset records in Workday and tracking capital assets from inception to retirement. Completing annual and ad hoc asset reports. Responding to auditor and sponsor requests. Other administrative duties or special projects as assigned.',
-    technologies: ['Data Analysis', 'Project Management', 'Asset Management'],
+    description: '• Coordinating the tagging of all movable equipment with a value of $5,000 or more.\n• Coordinating a biennial inventory of all capital equipment per PCS 600.\n• Maintaining capital asset records in Workday and tracking capital assets from inception to retirement.\n• Completing annual and ad hoc asset reports.\n• Responding to auditor and sponsor requests.\n• Other administrative duties or special projects as assigned.',
+    technologies: ['Excel', 'Workday', 'Data Analysis', 'Asset Management', 'Slack'],
     status: 'current'
   },
   {
@@ -30,8 +30,8 @@ const experiences = [
     period: 'Jun 2024 – Jan 2025',
     location: 'Remote',
     type: 'Internship',
-    description: 'Contributed to strategic planning and implementation of AI solutions, integrating technical insights with real-world applications. Completed specialized AI training, enhancing skills in machine learning, natural language processing (NLP), and model evaluation. Collaborated on AI-driven solutions and engaged with stakeholders to align chatbot development with business needs. Conducted strategic AI research and case studies, analyzing chatbot effectiveness and optimizing performance. Developed an AI Chatbot, gaining expertise in Transformer models and Mixture of Experts.',
-    technologies: ['TensorFlow', 'Python', 'NLTK', 'Machine Learning'],
+    description: '• Contributed to strategic planning and implementation of AI solutions, integrating technical insights with real-world applications.\n• Completed specialized AI training, enhancing skills in machine learning, natural language processing (NLP), and model evaluation.\n• Collaborated on AI-driven solutions and engaged with stakeholders to align chatbot development with business needs.\n• Conducted strategic AI research and case studies, analyzing chatbot effectiveness and optimizing performance.\n• Developed an AI Chatbot, gaining expertise in Transformer models and Mixture of Experts.',
+    technologies: ['Python', 'Machine learning', 'Javascript', 'React', 'NLTK', 'Tensorflow', 'Transformers', 'HuggingFace', 'AI'],
     status: 'current'
   },
   {
@@ -40,8 +40,8 @@ const experiences = [
     period: 'May 2024 – Aug 2024',
     location: 'Remote',
     type: 'Internship',
-    description: 'Collaborated with an interdisciplinary team to develop an AI-Driven Real-Time Analysis for CubeSat Mission Reliability technical proposal. Developed skills in technical proposal writing, peer review, and research project planning. Managed programmatic aspects for the team, overseeing budgeting, scheduling, and outreach efforts. Introduced efficient project management and scheduling methods, cutting project completion time by 20%.',
-    technologies: ['Project Management', 'Leadership', 'Research'],
+    description: '• Collaborated with an interdisciplinary team to develop an AI-Driven Real-Time Analysis for CubeSat Mission Reliability technical proposal.\n• Developed skills in technical proposal writing, peer review, and research project planning.\n• Managed programmatic aspects for the team, overseeing budgeting, scheduling, and outreach efforts.\n• Introduced efficient project management and scheduling methods, cutting project completion time by 20%.',
+    technologies: ['Project Management', 'Leadership', 'research', 'Jira', 'Technical Proposal Writing'],
     status: 'completed'
   },
   {
@@ -168,7 +168,7 @@ const ExperienceSection = () => {
             <p className="text-muted-foreground">Organizations</p>
           </Card>
           <Card className="glass-card p-6 text-center">
-            <div className="text-3xl font-bold gradient-text mb-2">3+</div>
+            <div className="text-3xl font-bold gradient-text mb-2">1+</div>
             <p className="text-muted-foreground">Years Experience</p>
           </Card>
           <Card className="glass-card p-6 text-center">

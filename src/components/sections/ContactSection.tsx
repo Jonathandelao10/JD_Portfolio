@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useState, ChangeEvent, FormEvent } from 'react';
-import { Send, Github, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
+import { Send, Github, Linkedin, Mail, MapPin, Phone, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -13,15 +13,15 @@ const contactInfo = [
   {
     icon: Mail,
     label: 'Email',
-    value: 'jonathan.delao@example.com',
-    href: 'mailto:jonathan.delao@example.com',
+    value: 'jddelao@asu.edu',
+    href: 'mailto:jddelao@asu.edu',
     color: 'text-primary'
   },
   {
     icon: Phone,
     label: 'Phone',
-    value: '+1 (555) 123-4567',
-    href: 'tel:+15551234567',
+    value: '(316) 925-2508',
+    href: 'tel:+13169252508',
     color: 'text-secondary'
   },
   {
@@ -47,9 +47,9 @@ const socialLinks = [
     color: 'hover:text-secondary'
   },
   {
-    icon: Mail,
-    label: 'Email',
-    href: 'mailto:jonathan.delao@example.com',
+    icon: Instagram,
+    label: 'Instagram',
+    href: 'https://www.instagram.com/jonathadelao/',
     color: 'hover:text-accent'
   }
 ];

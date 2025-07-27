@@ -13,19 +13,19 @@ const skillCategories = [
     icon: Brain,
     title: 'AI & Machine Learning',
     color: 'text-secondary',
-    skills: ['TensorFlow', 'Scikit-learn', 'Pandas', 'Numpy', 'NLTK', 'Matplotlib']
+    skills: ['TensorFlow', 'Scikit-learn', 'Pandas', 'Numpy', 'NLTK', 'Matplotlib', 'Seaborn']
   },
   {
     icon: Database,
     title: 'Databases & Tools',
     color: 'text-accent',
-    skills: ['PostgreSQL', 'Git', 'GitHub', 'Linux/Unix', 'Windows', 'Jupyter Notebook']
+    skills: ['PostgreSQL', 'MySQL', 'Git', 'GitHub', 'Linux/Unix', 'Windows', 'Jupyter Notebook']
   },
   {
     icon: Wrench,
     title: 'Frameworks & Technologies',
     color: 'text-primary-glow',
-    skills: ['React', 'FastAPI', 'TailwindCSS', 'VS Code', 'PyCharm', 'JUnit', 'Jira', 'Slack']
+    skills: ['React', 'FastAPI', 'TailwindCSS', 'VS Code', 'PyCharm', 'JUnit', 'Jira', 'Slack', 'Taiga', 'BeautifulSoup']
   }
 ];
 

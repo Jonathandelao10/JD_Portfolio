@@ -12,7 +12,8 @@ const projects = [
     technologies: ['Python', 'SQL', 'Pandas', 'Numpy', 'Matplotlib', 'Seaborn', 'Scikit-learn', 'Jupyter Notebook', 'BeautifulSoup'],
     category: 'AI/ML',
     featured: true,
-    status: 'completed'
+    status: 'completed',
+    githubUrl: 'https://github.com/Jonathandelao10/Data-Science-Certificate/tree/main/Capstone%20Project'
   },
   {
     title: 'Political News Bias Predictor',
@@ -20,7 +21,8 @@ const projects = [
     technologies: ['Python', 'TensorFlow', 'Numpy', 'NLTK', 'Scikit-learn', 'Pandas', 'BERT'],
     category: 'AI/ML',
     featured: true,
-    status: 'completed'
+    status: 'completed',
+    githubUrl: 'https://github.com/Jonathandelao10/Bias_Detector'
   },
   {
     title: 'AI-Powered Assistant',
@@ -28,7 +30,8 @@ const projects = [
     technologies: ['Python', 'NLTK', 'Llama 3.2', 'HuggingFace', 'Transformers'],
     category: 'AI/ML',
     featured: true,
-    status: 'completed'
+    status: 'completed',
+    githubUrl: 'https://github.com/Jonathandelao10/NLP-Project'
   },
   {
     title: 'AI chatbot for Financial Services',
@@ -36,7 +39,8 @@ const projects = [
     technologies: ['Gemini', 'JavaScript', 'React', 'Node.js', 'Firebase', 'CSS'],
     category: 'AI/ML',
     featured: true,
-    status: 'completed'
+    status: 'completed',
+    githubUrl: 'https://github.com/Jonathandelao10'
   },
   {
     title: 'Wine Quality prediction with ML models',
@@ -44,7 +48,8 @@ const projects = [
     technologies: ['Python', 'Scikit-learn', 'Numpy', 'Jupyter Notebook'],
     category: 'AI/ML',
     featured: false,
-    status: 'completed'
+    status: 'completed',
+    githubUrl: 'https://github.com/Jonathandelao10/DataScienceProjects'
   },
   {
     title: 'Real Estate Market Predictor',
@@ -52,7 +57,8 @@ const projects = [
     technologies: ['Python', 'Scikit-learn', 'Numpy', 'Matplotlib', 'Seaborn', 'Jupyter Notebook'],
     category: 'AI/ML',
     featured: false,
-    status: 'completed'
+    status: 'completed',
+    githubUrl: 'https://github.com/Jonathandelao10/DataScienceProjects'
   },
   {
     title: 'F1 Predictor 2025',
@@ -60,7 +66,8 @@ const projects = [
     technologies: ['Python', 'Jupyter Notebook', 'Pandas'],
     category: 'AI/ML',
     featured: false,
-    status: 'completed'
+    status: 'completed',
+    githubUrl: 'https://github.com/Jonathandelao10/DataScienceProjects'
   },
   {
     title: 'Facebook Sentiment Analysis',
@@ -68,7 +75,8 @@ const projects = [
     technologies: ['Python', 'NLTK', 'Numpy', 'Pandas', 'Matplotlib'],
     category: 'AI/ML',
     featured: false,
-    status: 'completed'
+    status: 'completed',
+    githubUrl: 'https://github.com/Jonathandelao10/DataScienceProjects'
   },
   {
     title: 'Sales Forecast Predictor',
@@ -76,7 +84,8 @@ const projects = [
     technologies: ['Python', 'Pandas', 'Matplotlib', 'Scikit-learn', 'XGBoost', 'Seaborn'],
     category: 'AI/ML',
     featured: false,
-    status: 'completed'
+    status: 'completed',
+    githubUrl: 'https://github.com/Jonathandelao10/DataScienceProjects'
   },
   {
     title: 'Stock Price predictor using Tensorflow',
@@ -84,7 +93,8 @@ const projects = [
     technologies: ['Python', 'Numpy', 'Pandas', 'TensorFlow', 'Seaborn', 'Matplotlib', 'Jupyter Notebook'],
     category: 'AI/ML',
     featured: false,
-    status: 'completed'
+    status: 'completed',
+    githubUrl: 'https://github.com/Jonathandelao10/DataScienceProjects'
   },
   {
     title: 'Credit Card Fraud Detector',
@@ -92,7 +102,8 @@ const projects = [
     technologies: ['Python', 'Matplotlib', 'Numpy', 'Pandas', 'Seaborn', 'Jupyter Notebook'],
     category: 'AI/ML',
     featured: false,
-    status: 'completed'
+    status: 'completed',
+    githubUrl: 'https://github.com/Jonathandelao10/DataScienceProjects'
   },
   {
     title: 'Effortlogger tool',
@@ -100,7 +111,8 @@ const projects = [
     technologies: ['Java', 'JUnit', 'Eclipse', 'Jira', 'Astah'],
     category: 'Software Engineering',
     featured: false,
-    status: 'completed'
+    status: 'completed',
+    githubUrl: 'https://github.com/JarrettGilp/Th54-EffortLoggerV2'
   },
   {
     title: 'Vehicle Software',
@@ -108,7 +120,8 @@ const projects = [
     technologies: ['C++'],
     category: 'Software Engineering',
     featured: false,
-    status: 'completed'
+    status: 'completed',
+    githubUrl: 'https://github.com/Jonathandelao10'
   },
   {
     title: 'Phone Directory',
@@ -116,7 +129,8 @@ const projects = [
     technologies: ['C++'],
     category: 'Software Engineering',
     featured: false,
-    status: 'completed'
+    status: 'completed',
+    githubUrl: 'https://github.com/Jonathandelao10/phoneDirectory'
   },
   {
     title: 'Rapid Recovery',
@@ -124,7 +138,8 @@ const projects = [
     technologies: ['JavaScript', 'p5.js', 'Git'],
     category: 'Web Development',
     featured: false,
-    status: 'completed'
+    status: 'completed',
+    githubUrl: 'https://github.com/Jonathandelao10'
   },
   {
     title: 'Mario Bros Website',
@@ -132,7 +147,8 @@ const projects = [
     technologies: ['HTML', 'JavaScript', 'CSS'],
     category: 'Web Development',
     featured: false,
-    status: 'completed'
+    status: 'completed',
+    githubUrl: 'https://github.com/Jonathandelao10/Mario-Bros-Website'
   },
   {
     title: 'eCommerce Platform',
@@ -140,7 +156,8 @@ const projects = [
     technologies: ['PostgreSQL', 'JavaScript', 'CSS', 'HTML', 'React'],
     category: 'Full-Stack',
     featured: false,
-    status: 'completed'
+    status: 'completed',
+    githubUrl: 'https://github.com/Jonathandelao10/eCommerce_app'
   }
 ];
 
@@ -249,7 +266,12 @@ const ProjectsSection = () => {
                     </div>
 
                     <div className="flex justify-center pt-4">
-                      <Button size="sm" variant="outline" className="w-full">
+                      <Button 
+                        size="sm" 
+                        variant="outline" 
+                        className="w-full"
+                        onClick={() => window.open(project.githubUrl, '_blank')}
+                      >
                         <Github className="h-4 w-4 mr-2" />
                         Code
                       </Button>
@@ -320,7 +342,11 @@ const ProjectsSection = () => {
                     </div>
 
                     <div className="flex justify-center pt-2">
-                      <Button size="sm" variant="ghost">
+                      <Button 
+                        size="sm" 
+                        variant="ghost"
+                        onClick={() => window.open(project.githubUrl, '_blank')}
+                      >
                         <Github className="h-3 w-3" />
                       </Button>
                     </div>
