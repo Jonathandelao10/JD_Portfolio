@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Home, User, Code, GraduationCap, Briefcase, FolderOpen, Award, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { ThemeToggle } from '@/components/theme-toggle';
 import HeroSection from './sections/HeroSection';
 import AboutSection from './sections/AboutSection';
 import SkillsSection from './sections/SkillsSection';
@@ -72,32 +73,38 @@ const Portfolio = () => {
             </div>
           </div>
           
-          <nav className="hidden md:flex items-center space-x-1">
-            {navigationItems.map((item) => (
-              <button
-                key={item.id}
-                onClick={() => scrollToSection(item.id)}
-                className={`flex items-center space-x-2 px-4 py-2 rounded-lg transition-all duration-300 ${
-                  activeSection === item.id
-                    ? 'bg-primary/20 text-primary'
-                    : 'hover:bg-muted/50 text-muted-foreground hover:text-foreground'
-                }`}
-              >
-                <item.icon className="h-4 w-4" />
-                <span className="font-medium">{item.label}</span>
-              </button>
-            ))}
-          </nav>
+          <div className="hidden md:flex items-center space-x-4">
+            <nav className="flex items-center space-x-1">
+              {navigationItems.map((item) => (
+                <button
+                  key={item.id}
+                  onClick={() => scrollToSection(item.id)}
+                  className={`flex items-center space-x-2 px-4 py-2 rounded-lg transition-all duration-300 ${
+                    activeSection === item.id
+                      ? 'bg-primary/20 text-primary'
+                      : 'hover:bg-muted/50 text-muted-foreground hover:text-foreground'
+                  }`}
+                >
+                  <item.icon className="h-4 w-4" />
+                  <span className="font-medium">{item.label}</span>
+                </button>
+              ))}
+            </nav>
+            <ThemeToggle />
+          </div>
 
-          {/* Mobile Menu Button */}
-          <Button
-            variant="outline"
-            size="icon"
-            className="md:hidden glass-card"
-            onClick={() => setSidebarOpen(!sidebarOpen)}
-          >
-            {sidebarOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-          </Button>
+          {/* Mobile Menu Button & Theme Toggle */}
+          <div className="flex items-center space-x-2 md:hidden">
+            <ThemeToggle />
+            <Button
+              variant="outline"
+              size="icon"
+              className="glass-card"
+              onClick={() => setSidebarOpen(!sidebarOpen)}
+            >
+              {sidebarOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+            </Button>
+          </div>
         </div>
       </motion.header>
 

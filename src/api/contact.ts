@@ -6,32 +6,19 @@ interface ContactFormData {
 }
 
 export const submitContactForm = async (data: ContactFormData): Promise<{ success: boolean }> => {
-  // In development, simulate API call
-  if (import.meta.env.DEV) {
-    console.log('Contact form submission:', data);
-    
-    // Simulate network delay
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    // Simulate success (you can modify this to test error scenarios)
-    return { success: true };
-  }
+  // Always simulate in development (no actual backend available)
+  console.log('Contact form submission:', data);
   
-  // In production, make actual API call
-  const response = await fetch('/api/contact', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({
-      ...data,
-      to: 'jddelao@asu.edu'
-    }),
+  // Simulate network delay
+  await new Promise(resolve => setTimeout(resolve, 1000));
+  
+  // Simulate sending email to jddelao@asu.edu
+  console.log(`Email would be sent to: jddelao@asu.edu with content:`, {
+    from: data.email,
+    name: data.name,
+    message: data.message
   });
   
-  if (!response.ok) {
-    throw new Error(`HTTP error! status: ${response.status}`);
-  }
-  
-  return await response.json();
+  // Simulate success
+  return { success: true };
 };
