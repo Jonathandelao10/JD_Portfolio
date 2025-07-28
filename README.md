@@ -2,7 +2,7 @@
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/62589c0a-0c4d-4f9d-a87e-7ea98a28a69c
+**URL**: https://jonathandelao10.github.io/JD_Portfolio/
 
 ## What technologies are used for this project?
 
